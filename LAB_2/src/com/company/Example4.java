@@ -1,33 +1,39 @@
 package com.company;
 
 import java.io.*;
+import java.io.InputStreamReader;
 
-/**
- * Created by fms1541b on 03.02.2016.
+/*
+    03.02.16
+    Фаткуллин Марсель;
+    Находим минимальное из двух чисел;
  */
 public class Example4 {
-    public static void main(String[] args) {
-        InputStream inputStream = System.in;
-        Reader inputStreamReader = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
+    public static void main(String[] args) {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        //создаем объект класса Example4
+        //System.in - объект, стандартный поток ввода(клавиатура)
+
+        //переменные
         String m,n;
         int m1=0, n1=0;
 
-        try {
-            m = bufferedReader.readLine(); //читаем строку с клавиатуры
+        //Считываем данные с клавиатуры
+        try { //попробовать выполнить
+            m = in.readLine(); //читаем строку с клавиатуры
             m1 = Integer.parseInt(m); //преобразовываем строку в число.
-        } catch (IOException e) {
-            System.out.println("Ошибка");;
-
+        } catch (IOException e) { //отловить ошибку
+            System.out.println("Ошибка");
         }
         try {
-            n = bufferedReader.readLine(); //читаем строку с клавиатуры
+            n = in.readLine(); //читаем строку с клавиатуры
             n1= Integer.parseInt(n); //преобразовываем строку в число.
         } catch (IOException e) {
-            System.out.println("Ошибка");;
+            System.out.println("Ошибка");
         }
 
+        //Основная программа
         if (m1<n1){
             System.out.println("min = " + m1);
         } else {

@@ -1,29 +1,34 @@
 package com.company;
 
+//Библиотеки пакетов Java
 import java.io.*;
+import java.io.InputStreamReader;
 
-/**
- * Created by fms1541b on 03.02.2016.
+/*
+    03.02.16
+    Фаткуллин Марсель;
+    Рисуем прямоугольный треугольник из 8;
  */
 public class Example3 {
 
     public static void main (String[] args){
-        InputStream inputStream = System.in;
-        Reader inputStreamReader = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        //создаем объект класса Example3
+        //System.in - объект, стандартный поток ввода(клавиатура)
 
+        //переменные
         String m;
         int m1=0;
 
-        try {
-            m = bufferedReader.readLine(); //читаем строку с клавиатуры
+        //Считываем данные с клавиатуры
+        try { //попробовать выполнить
+            m = in.readLine(); //читаем строку с клавиатуры
             m1 = Integer.parseInt(m); //преобразовываем строку в число.
-        } catch (IOException e) {
-            System.out.println("Ошибка");;
-
+        } catch (IOException e) { //отловить ошибку
+            System.out.println("Ошибка");
         }
 
-
+        //Основная программа
         for(int i=1; i<m1; i++){
             for(int j=1; j<=i; j++){
                 System.out.print(8);

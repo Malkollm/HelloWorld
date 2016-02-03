@@ -1,56 +1,56 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
+import java.io.*;
 
 /**
- * Created by fms1541b on 03.02.2016.
+ 03.02.16
+ Фаткуллин Марсель;
+ Функция вычисляющая минимум из 4-х чисел
  */
 public class Example6 {
 
     public static int min(int a, int b){
+
         return a < b ? a : b;
-    }
+    } //метод условного выражения для нахождения минимума м/у 2-мя числами
 
     public static int min4(int a, int b, int c, int d) {
+
         return min(a, min(b, min(c, d)));
-    }
+    } //метод
 
     public static void main(String[] args) {
-            InputStream inputStream = System.in;
-            Reader inputStreamReader = new InputStreamReader(inputStream);
-            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        BufferedReader in = new BufferedReader(new java.io.InputStreamReader(System.in));
 
         String w,x,y,z;
         int w1,x1,y1,z1;
 
-            try {
-                w = bufferedReader.readLine(); //читаем строку с клавиатуры
+            //Считываем данные с клавиатуры
+            try { //попробовать выполнить
+                w = in.readLine(); //читаем строку с клавиатуры
                 w1 = Integer.parseInt(w); //преобразовываем строку в число.
-            } catch (IOException e) {
+            } catch (IOException e) { //отловить ошибку
                 System.out.println("Ошибка");;
             }
             try {
-                x = bufferedReader.readLine();
+                x = in.readLine();
                 x1 = Integer.parseInt(x); //преобразовываем строку в число.
             } catch (IOException e) {
                 System.out.println("Ошибка");;
             }
             try {
-                y = bufferedReader.readLine();
+                y = in.readLine();
                 y1 = Integer.parseInt(y); //преобразовываем строку в число.
             } catch (IOException e) {
                 System.out.println("Ошибка");;
             }
             try {
-                z = bufferedReader.readLine();
+                z = in.readLine();
                 z1 = Integer.parseInt(z); //преобразовываем строку в число.
             } catch (IOException e) {
                 System.out.println("Ошибка");;
             }
-        System.out.println(min(w1,x1,y1,z1));
+       // System.out.println(min(w1,x1,y1,z1));
 
 
 
