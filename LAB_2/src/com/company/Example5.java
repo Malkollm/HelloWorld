@@ -3,10 +3,10 @@ package com.company;
 import java.io.*;
 import java.io.InputStreamReader;
 
-/*
-    03.02.16
-    Фаткуллин Марсель;
-    Проверка введеного имени на идентичность и длину;
+/**
+   * 03.02.16
+   * Фаткуллин Марсель;
+   * Проверка введеного имени на идентичность и длину;
  */
 public class Example5 {
     public static void main(String[] args) {

@@ -4,10 +4,10 @@ package com.company;
 import java.io.*;
 import java.io.InputStreamReader;
 
-/*
-    03.02.16
-    Фаткуллин Марсель;
-    Рисуем прямоугольный треугольник из 8;
+/**
+   * 03.02.16
+   * Фаткуллин Марсель;
+   * Рисуем прямоугольный треугольник из 8;
  */
 public class Example3 {
 

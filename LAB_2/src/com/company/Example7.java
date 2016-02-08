@@ -2,10 +2,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/*
-    03.02.16
-    Фаткуллин Марсель;
-    Проверка координат на четверть;
+/**
+   * 03.02.16
+   * Фаткуллин Марсель;
+   * Проверка координат на четверть;
  */
 public class Example7 {
 

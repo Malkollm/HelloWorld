@@ -3,10 +3,10 @@ package com.company;
 import java.io.*;
 import java.io.InputStreamReader;
 
-/*
-    03.02.16
-    Фаткуллин Марсель;
-    Находим минимальное из двух чисел;
+/**
+   * 03.02.16
+   * Фаткуллин Марсель;
+   * Находим минимальное из двух чисел;
  */
 public class Example4 {
 
