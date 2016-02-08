@@ -5,7 +5,9 @@
  */
 package javaapplication1;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 
 /**
@@ -13,24 +15,24 @@ import java.io.IOException;
  * @author fms1541b
  */
 public class NewClass1 {
-    private static Object bufferedReader;
      public static void main(String[] args) {
+         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String r;
         int m=0;
              
         try {
-            m = bufferedReader.readLine();//читаем строку с клавиатуры
+            r = in.readLine();//читаем строку с клавиатуры
             m = Integer.parseInt(r); //преобразовываем строку в число.
             } 
-        catch (IOException ex) {
+        catch (IOException e) {
                 System.out.print("Ошибка");
             }
     
-    for(int i=0;i<=10;i++){
-    for(int d=0;d<i;d++){
-    System.out.println(8);
-    }
-    System.out.print("");
+    for(int i=1;i<m;i++){
+        for(int d=1;d<=i;d++){
+            System.out.print(8);
+        }
+            System.out.println("");
     }
     }
     }
