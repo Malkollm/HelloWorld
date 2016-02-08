@@ -11,8 +11,9 @@ import java.io.InputStreamReader;
 
 
 /**
- *
- * @author fms1541b
+   * 03.02.16
+   * Парадова Юлия;
+   * Рисуем прямоугольный треугольник из 8;
  */
 public class NewClass1 {
      public static void main(String[] args) {

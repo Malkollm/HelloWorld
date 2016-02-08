@@ -12,15 +12,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author fms1541b
+   * 03.02.16
+   * Парадова Юлия;
+   * Рисуем прямоугольник из цифры 8;
  */
 public class JavaApplication2 {
-    
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String m,n;
@@ -39,7 +35,6 @@ public class JavaApplication2 {
             Logger.getLogger(JavaApplication2.class.getName()).log(Level.SEVERE, null, ex);
         }
     
-
     for(int i=0;i<m1;i++){
     for(int d=1;d<n1;d++){
     System.out.print(8);

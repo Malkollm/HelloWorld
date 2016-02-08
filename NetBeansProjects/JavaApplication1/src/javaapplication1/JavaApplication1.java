@@ -6,8 +6,9 @@
 package javaapplication1;
 
 /**
- *
- * @author fms1541b
+   * 03.02.16
+   * Парадова Юлия;
+   * Вывод четных чисел в диапазоне [1;100];
  */
 public class JavaApplication1 {
    

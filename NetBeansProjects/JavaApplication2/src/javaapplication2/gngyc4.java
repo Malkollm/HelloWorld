@@ -12,8 +12,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author fms1541b
+   * 03.02.16
+   * Парадова Юлия;
+   * Находим минимальное из двух чисел
  */
 public class gngyc4 {
     public static void main (String[] args){
