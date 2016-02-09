@@ -20,8 +20,8 @@ public class gngyc4 {
     public static void main (String[] args){
           BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
       
-      String i,n;
-      int s1=0,v1=0;
+      String i,n;//строка
+      int s1=0,v1=0;//объявляем переменные
         
         try {
             i = in.readLine(); //читаем строку с клавиатуры
@@ -36,9 +36,9 @@ public class gngyc4 {
         } catch (IOException ex) {
             Logger.getLogger(gngyc4.class.getName()).log(Level.SEVERE, null, ex);
         }    
-        if (s1<v1) 
+        if (s1<v1) //если s1 меньше v1 то
             System.out.println("min: " + s1);        
-         else 
+         else //иначе
             System.out.println("min: " + v1);
     }     
 }
