@@ -19,8 +19,8 @@ import java.util.logging.Logger;
 public class JavaApplication2 {
     public static void main(String[] args) {
     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String m,n;
-        int m1=0,n1=0;
+        String m,n;//строка
+        int m1=0,n1=0;//переменные
         
         try {
             m = in.readLine(); //читаем строку с клавиатуры
@@ -35,8 +35,8 @@ public class JavaApplication2 {
             Logger.getLogger(JavaApplication2.class.getName()).log(Level.SEVERE, null, ex);
         }
     
-    for(int i=0;i<m1;i++){
-    for(int d=1;d<n1;d++){
+    for(int i=0;i<m1;i++){//
+    for(int d=1;d<n1;d++){//
     System.out.print(8);
     }
     System.out.println(8);

@@ -1,3 +1,4 @@
+package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,7 +15,8 @@ public class Example7 {
         //создаем объект класса Example7
         //System.in - объект, стандартный поток ввода(клавиатура)
 
-        //переменные
+        //m1 - абцисс
+        //n1 - ординат
         String m,n;
         int m1=0,n1=0;
 
@@ -30,18 +32,17 @@ public class Example7 {
             System.out.println("Ошибка");
         }
 
-
         //Основная программа
-        if ((m1 > 0) && (n1 > 0)) {
+        if ((m1 >= 0) && (n1 >= 0)) {
             System.out.println("1 четверть");
         }
-        if ((m1 < 0) && (n1 > 0)) {
+        if ((m1 <= 0) && (n1 >= 0)) {
             System.out.println("2 четверть");
         }
-        if ((m1 < 0) && (n1 < 0)) {
+        if ((m1 <= 0) && (n1 <= 0)) {
             System.out.println("3 четверть");
         }
-        if ((m1 > 0) && (n1 < 0)) {
+        if ((m1 >= 0) && (n1 <= 0)) {
             System.out.println("4 четверть");
         }
     }

@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         try { //попробовать выполнить
-            int i = 2;
+            int i = 0;
             while (i < 100) {
                 i += 2;
                 System.out.print(i + " ");
