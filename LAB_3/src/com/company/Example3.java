@@ -9,18 +9,21 @@ import java.util.Random;
  */
 public class Example3 {
     public static void main(String[] args) {
+        int count=0;
         int[] arr = new int[10];
         Random random = new Random();
 
         System.out.print("arr: ");
-        for (int i=0; i<arr.length; i++){
+        for (int i=0; i<arr.length; i++) {
             arr[i] = random.nextInt(9); //[0;9]
             System.out.print(arr[i] + " ");
-            //TODO
-            //Разобраться как найти четные элементы массива
-            if (arr[i] Math.mod 2){
-                System.out.println(arr[i]);
+        }
+        for(int i=0; i<arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                count+=1;
             }
         }
+        System.out.println("");
+        System.out.println("Количество четных " + count);
     }
 }
