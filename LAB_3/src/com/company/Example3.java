@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class Example3 {
     public static void main(String[] args) {
-        int count=0;
+        int count=0; //Переменная для подсчета количества
         int[] arr = new int[10];
         Random random = new Random();
 
@@ -18,6 +18,7 @@ public class Example3 {
             arr[i] = random.nextInt(9); //[0;9]
             System.out.print(arr[i] + " ");
         }
+        //Поиск четных чисел
         for(int i=0; i<arr.length; i++) {
             if (arr[i] % 2 == 0) {
                 count+=1;

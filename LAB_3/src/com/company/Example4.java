@@ -10,12 +10,18 @@ import java.util.Random;
 public class Example4 {
     public static void main(String[] args) {
         int[][] arr = new int[8][5];
-        Random random = new Random();
+
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                arr[i][j] = random.nextInt()*90+10;
-                System.out.println(arr[i][j]);
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = (int) (Math.random() * 99 + 10); //[10;99]
+            }
+        }
+        //Вывод
+        for (int i = 0; i < arr.length; i++, System.out.println()) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
             }
         }
     }
 }
+
