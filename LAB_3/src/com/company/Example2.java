@@ -12,13 +12,14 @@ public class Example2 {
 
         //В прямом порядке
         for (int i=1; i<arr.length; i+=2){
-            System.out.print(i + " ");
+            arr[i] = i;
+            System.out.print(arr[i] + " ");
         }
         //Переход на новую строку
         System.out.println("\n");
         //В обратном порядке
         for (int j=arr.length-1; j>0; j-=2){
-            System.out.print(j + " ");
+            System.out.print(arr[j] + " ");
         }
     }
 }

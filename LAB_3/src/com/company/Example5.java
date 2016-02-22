@@ -17,7 +17,7 @@ public class Example5 {
             for (int j = 0; j < arr[i].length; j++) {
                 arr[i][j] = (int) (Math.random() * 11) - 5;
                 count1 *= arr[i][j];
-                System.out.print(arr[i][j] + " ");
+                System.out.format(arr[i][j] + " ");
             }
 
             if (Math.abs(count1) > count) {
