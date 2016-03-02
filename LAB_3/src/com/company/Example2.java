@@ -8,18 +8,21 @@ package com.company;
 public class Example2 {
     public static void main(String[] args) {
         //Инициализация массива arr размерностью 100
-        int[] arr = new int[100];
+        int[] arr = new int[50];
+        int k = 0;
+        int l = 0;
 
         //В прямом порядке
-        for (int i=1; i<arr.length; i+=2){
-            arr[i] = i;
-            System.out.print(arr[i] + " ");
+        for (int i = 1; i < 100; i += 2) {
+            arr[k] = i;
+            System.out.print(arr[k] + " ");
         }
         //Переход на новую строку
         System.out.println("\n");
         //В обратном порядке
-        for (int j=arr.length-1; j>0; j-=2){
-            System.out.print(arr[j] + " ");
+        for (int j = 100-1; j > 0; j -= 2) {
+            arr[l]=j;
+            System.out.print(arr[l] + " ");
         }
     }
 }

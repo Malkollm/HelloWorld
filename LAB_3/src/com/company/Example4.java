@@ -13,7 +13,8 @@ public class Example4 {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = (int) (Math.random() * 99 + 10); //[10;99]
+                //TODO
+                arr[i][j] = (int) (Math.random() * 109 + 10); //[10;99]
             }
         }
         //Вывод

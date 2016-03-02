@@ -11,11 +11,10 @@ public class Example3 {
     public static void main(String[] args) {
         int count=0; //Переменная для подсчета количества
         int[] arr = new int[10];
-        Random random = new Random();
 
         System.out.print("arr: ");
         for (int i=0; i<arr.length; i++) {
-            arr[i] = random.nextInt(9); //[0;9]
+            arr[i] = (int)(Math.random() * 10 ); //[0;9]
             System.out.print(arr[i] + " ");
         }
         //Поиск четных чисел
